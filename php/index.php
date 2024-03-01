@@ -14,8 +14,8 @@
 </head>
 <body>
 	<main>
-		<h1>Olá, mundo!</h1>
-		<p>Este é um exemplo de página HTML.</p>
+		<h1>Parabéns <?php echo $_SESSION['login'] ?>! Você está autenticado!</h1>
+		<a href="deslogar.php">Sair</a>
 	</main>
 </body>
 </html>
