@@ -1,12 +1,16 @@
 <?php
     session_start();
+    if (!isset($_SESSION['login'])) {
+        header('Location: logar.php');
+        exit();
+    }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fale Conosco</title>
+    <title>Sobre</title>
     <!-- Adicionando estilos CSS -->
     <style>
         body {
@@ -52,32 +56,11 @@
         button:hover {
             background-color: #0056b3;
         }
-        form {
-            margin-top: 20px;
-            text-align: left;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        textarea {
-            height: 150px;
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Contato</h1>
+        <h1>Sobre</h1>
     </header>
     <nav style="display: flex; justify-content: space-between; align-items: center;">
         <div>
@@ -97,19 +80,14 @@
         </div>
     </nav>
     <main>
-        <h2>Entre em contato conosco</h2>
-        <form action="#" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
+        <h2>Nossa História</h2>
+        <p>Somos uma empresa dedicada a fornecer soluções inovadoras para nossos clientes. Fundada em 20XX, temos anos de experiência no mercado e uma equipe talentosa pronta para atender às necessidades dos clientes.</p>
+        
+        <h2>Nossa Missão</h2>
+        <p>Nossa missão é fornecer produtos e serviços da mais alta qualidade, superando as expectativas dos clientes e contribuindo para o sucesso de seus projetos.</p>
+        
+        <h2>Nossa Visão</h2>
+        <p>Nossa visão é ser reconhecida como líder de mercado em nossa área de atuação, com um compromisso contínuo com a inovação, excelência e satisfação do cliente.</p>
     </main>
 </body>
 </html>

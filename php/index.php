@@ -61,10 +61,8 @@
 	<nav style="display: flex; justify-content: space-between; align-items: center;">
 		<div>
 			<a href="index.php">Home</a>
-			<a href="#">Cadastros</a>
-			<a href="#">Sites</a>
-			<a href="#">Contatos</a>
-			<a href="#">Parceiros</a>
+			<a href="sobre.php">Sobre</a>
+			<a href="servicos.php">Serviços</a>
 			<a href="faleconosco.php">Fale conosco</a>
 		</div>	
 		<div>
