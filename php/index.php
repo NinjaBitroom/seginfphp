@@ -65,7 +65,7 @@
 			<a href="#">Sites</a>
 			<a href="#">Contatos</a>
 			<a href="#">Parceiros</a>
-			<a href="#">Fale conosco</a>
+			<a href="faleconosco.php">Fale conosco</a>
 		</div>	
 		<div>
 			<?php if (isset($_SESSION['login'])): ?>
@@ -80,7 +80,6 @@
 	<main>
 		<h2>Conteúdo Principal</h2>
 		<p>Aqui você pode adicionar o conteúdo principal da sua página.</p>
-
 	</main>
 </body>
 </html>
