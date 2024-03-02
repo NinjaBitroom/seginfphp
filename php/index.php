@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -66,7 +69,13 @@
 	<main>
 		<h2>Conteúdo Principal</h2>
 		<p>Aqui você pode adicionar o conteúdo principal da sua página.</p>
-		<button onclick="window.location.href='registrar.php'">Registrar/Login</button>
+		<?php if (isset($_SESSION['login'])): ?>
+			<form action="deslogar.php" method="post">
+            	<button type="submit">Deslogar</button>
+        	</form>
+		<?php  else: ?>
+			<button onclick="window.location.href='registrar.php'">Registrar/Login</button>
+		<?php endif ?>
 	</main>
 </body>
 </html>
