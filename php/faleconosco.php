@@ -10,26 +10,7 @@
     <?php require_once 'includes/base/styles.php'; ?>
 </head>
 <body>
-    <header>
-        <h1>Contato</h1>
-    </header>
-    <nav style="display: flex; justify-content: space-between; align-items: center;">
-        <div>
-            <a href="index.php">Home</a>
-			<a href="sobre.php">Sobre</a>
-			<a href="servicos.php">Serviços</a>
-			<a href="faleconosco.php">Fale conosco</a>
-        </div> 
-        <div>
-            <?php if (isset($_SESSION['login'])): ?>
-                <form action="deslogar.php" method="post">
-                    <button type="submit">Deslogar</button>
-                </form>
-            <?php  else: ?>
-                <button onclick="window.location.href='registrar.php'">Registrar/Login</button>
-            <?php endif ?>
-        </div>
-    </nav>
+    <?php require_once 'includes/base/header.php'; ?>
     <main>
         <h2>Entre em contato conosco</h2>
         <form action="#" method="post">
