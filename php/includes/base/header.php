@@ -14,7 +14,7 @@
                 <button type="submit">Deslogar</button>
             </form>
         <?php  else: ?>
-            <button onclick="window.location.href='registrar.php'">Registrar/Login</button>
+            <button onclick="window.location.href='logar.php'">Entrar</button>
         <?php endif ?>
     </div>
 </nav>

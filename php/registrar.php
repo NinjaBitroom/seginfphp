@@ -48,6 +48,7 @@
 <body>
     <main>
         <h1>Registrar</h1>
+        <a href="index.php">Ir para o Início</a>
         <form action="registrar.php" method="post">
             <input type="text" name="login" id="login" placeholder="Login" required>
             <input type="password" name="senha" id="senha" placeholder="Senha" required>
@@ -57,7 +58,7 @@
             <p class="error-message"><?php echo $error_message; ?></p>
         <?php endif; ?>
         <span>Já possui uma conta?</span>
-        <a class="login-link" href="logar.php">Login</a>
+        <a href="logar.php">Login</a>
     </main>
 </body>
 </html>

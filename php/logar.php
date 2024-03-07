@@ -41,6 +41,7 @@
 <body>
     <main>
         <h1>Login</h1>
+        <a href="index.php">Ir para o Início</a>
         <form action="logar.php" method="post">
             <input type="text" name="login" id="login" placeholder="Login" required>
             <input type="password" name="senha" id="senha" placeholder="Senha" required>
@@ -50,7 +51,7 @@
             <p class="error-message"><?php echo $error_message; ?></p>
         <?php endif; ?>
         <span>Não tem uma conta?</span>
-        <a class="register-link" href="registrar.php">Registrar</a>
+        <a href="registrar.php">Registrar</a>
     </main>
 </body>
 </html>

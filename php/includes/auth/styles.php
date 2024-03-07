@@ -22,7 +22,7 @@
     input[type="password"] {
         width: 100%;
         padding: 10px;
-        margin: 10px 0;
+        margin: 0 0 10px 0;
         border-radius: 5px;
         border: 1px solid #ccc;
         box-sizing: border-box;
@@ -36,6 +36,9 @@
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s;
+        margin-bottom: 10px;
+        font-size: larger;
+        font-weight: bold;
     }
     button:hover {
         background-color: #0056b3;
@@ -44,24 +47,15 @@
         color: #ff0000;
         margin-bottom: 10px;
     }
-    .login-link {
-        display: block;
-        margin-top: 10px;
+    a {
         text-decoration: none;
         color: #007bff;
         transition: color 0.3s;
     }
-    .login-link:hover {
+    a:hover {
         color: #0056b3;
     }
-    .register-link {
-        display: block;
-        margin-top: 10px;
-        text-decoration: none;
-        color: #007bff;
-        transition: color 0.3s;
-    }
-    .register-link:hover {
-        color: #0056b3;
+    form {
+        margin: 10px 0;
     }
 </style>
