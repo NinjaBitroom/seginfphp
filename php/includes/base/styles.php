@@ -43,7 +43,6 @@
         background-color: #0056b3;
     }
     form {
-        margin-top: 20px;
         text-align: left;
     }
     label {
