@@ -78,15 +78,10 @@
 
     .servicos-page .service-container {
         margin-bottom: 30px;
-        /* Espaçamento entre os containers de serviço */
         border: 1px solid #ccc;
-        /* Borda para separar visualmente os containers */
         border-radius: 5px;
-        /* Arredondamento das bordas */
         padding: 20px;
-        /* Espaçamento interno */
         background-color: #f9f9f9;
-        /* Cor de fundo dos containers */
     }
 
     .servicos-page .service-item {
@@ -95,15 +90,13 @@
     }
 
     .servicos-page .service-item h3 {
-        color: #999;
-        /* Cor do título do serviço */
+        color: #f9f9f9;
         margin-top: 0;
-        /* Remover margem superior padrão */
         font-size: 30px;
     }
 
     .servicos-page .service-item p {
-        color: #999;
+        color: #f9f9f9;
         /* Cor do texto do serviço */
         font-size: 20px;
     }
@@ -220,51 +213,28 @@
 
     .content-item img {
         max-width: 100%;
-        /* Garante que a imagem não ultrapasse a largura do seu contêiner */
         height: auto;
-        /* Mantém a proporção da imagem ao redimensionar */
         display: block;
-        /* Remove espaços extras abaixo da imagem */
         margin: 0 auto;
-        /* Centraliza a imagem horizontalmente */
     }
 
     .content-item {
         text-align: center;
-        /* Centraliza o conteúdo horizontalmente */
-    }
-
-    .image-container {
-        position: relative;
-        /* Define um contexto de posicionamento para os elementos internos */
-        display: inline-block;
-        /* Permite que o contêiner se ajuste ao tamanho da imagem */
     }
 
     .image-text {
         position: absolute;
-        /* Posiciona o texto de forma absoluta em relação ao contêiner pai */
         top: 50%;
-        /* Move o texto para 50% da altura do contêiner pai */
         left: 50%;
-        /* Move o texto para 50% da largura do contêiner pai */
         transform: translate(-50%, -50%);
-        /* Corrige o posicionamento para centralizar o texto */
         background-color: rgba(255, 255, 255, 0.8);
-        /* Fundo semi-transparente para legibilidade */
         padding: 10px;
-        /* Espaçamento interno para o texto */
-    }
-
-    .content-item {
-        text-align: center;
     }
 
     .image-container {
         position: relative;
         display: inline-block;
         overflow: hidden;
-        /* Impede que o texto ultrapasse a imagem */
     }
 
     .image-overlay {
@@ -274,11 +244,8 @@
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.7);
-        /* Fundo semi-transparente para o overlay */
-        opacity: 0;
-        /* Inicialmente oculto */
+        /* opacity: 0; */
         transition: opacity 0.3s ease;
-        /* Transição suave para a opacidade */
     }
 
     .overlay-content {
@@ -306,11 +273,6 @@
 
     .overlay-button:hover {
         background-color: #0056b3;
-    }
-
-    /* Ao passar o mouse sobre a imagem, exibe o overlay */
-    .image-container:hover .image-overlay {
-        opacity: 1;
     }
 
     .social-icons {
@@ -372,9 +334,7 @@
         transform: translate(-50%, -50%);
         text-align: center;
         color: #000;
-        /* Defina a cor do texto aqui */
         padding: 20px;
-        display: none;
     }
 
     .service-item h3 {
@@ -397,16 +357,11 @@
         left: 0;
         width: 100%;
         height: 100%;
-        opacity: 0;
         background-color: rgba(0, 0, 0, 0.7);
         transition: opacity 0.3s;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .service-container:hover .overlay {
-        opacity: 1;
     }
 
     .service-image {

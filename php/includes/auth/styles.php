@@ -105,4 +105,8 @@
     .telegram {
         background-color: #0088cc;
     }
+
+    .fab {
+        color: #fff;
+    }
 </style>

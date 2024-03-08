@@ -12,6 +12,7 @@ if (!isset($_SESSION['login'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <?php require_once 'includes/base/styles.php'; ?>
 </head>
 
@@ -26,8 +27,7 @@ if (!isset($_SESSION['login'])) {
                         <h2>Protegendo o seu Mundo Digital</h2>
                         <p>Nossa empresa de cibersegurança é uma referência no mercado, dedicada a proteger organizações contra as crescentes ameaças cibernéticas. Com uma equipe altamente qualificada e experiente, oferecemos soluções abrangentes e inovadoras para garantir a segurança digital dos nossos clientes.</p>
                         <a href="sobre.php" class="overlay-button">Saiba Mais</a>
-                        <p>
-                        <footer>
+                        <footer style="padding-top: 12px;">
                             <div class="social-icons">
                                 <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
@@ -40,7 +40,6 @@ if (!isset($_SESSION['login'])) {
             </div>
         </div>
     </main>
-
 </body>
 
 </html>

@@ -64,8 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <span>Já possui uma conta?</span>
         <a href="logar.php">Login</a>
     </main>
-    <p>
-    <footer>
+    <footer style="padding-top: 12px;">
         <div class="social-icons">
             <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>

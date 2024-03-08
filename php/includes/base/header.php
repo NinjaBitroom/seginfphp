@@ -11,7 +11,7 @@
     <div>
         <?php if (isset($_SESSION['login'])) : ?>
             <form action="deslogar.php" method="post">
-                <button type="submit" class="logout-button">Logout</button>
+                <button type="submit" class="logout-button">Sair</button>
             </form>
         <?php else : ?>
             <button onclick="window.location.href='logar.php'" class="login-button">Entrar</button>
