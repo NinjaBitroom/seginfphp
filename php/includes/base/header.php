@@ -4,6 +4,9 @@
 <nav style="display: flex; justify-content: space-between; align-items: center;">
     <div>
         <a href="index.php">Início</a>
+        <?php if (isset($_SESSION['login'])) : ?>
+            <a href="dashboard.php">Painel</a>
+        <?php endif ?>
         <a href="sobre.php">Sobre</a>
         <a href="servicos.php">Serviços</a>
         <a href="faleconosco.php">Fale conosco</a>
